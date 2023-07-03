@@ -2,7 +2,7 @@ import type {MongoDB} from '../mongodb'
 import {Router} from 'express'
 import {getUserIdFromJwtP} from './getUserIdFromJwtP'
 
-export const testRouter = (...args: any[]) => {
+export const listRouter = (...args: any[]) => {
   const db: MongoDB = args[0]
   const test = db.collection('test')
   const router = Router()
